@@ -14,4 +14,6 @@ class Ethereum extends CoinAbstract
     protected $name = 'Ethereum';
 
     protected $logoUrl = 'https://s2.coinmarketcap.com/static/img/coins/32x32/1027.png';
+
+    protected $shortName = 'ETH';
 }

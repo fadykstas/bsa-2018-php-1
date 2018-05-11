@@ -9,8 +9,8 @@ use Cryptocurrency\Task1\{Bitcoin, Ethereum, Dogecoin};
 // Fill in your market with currencies and use your presenter to show data here:
 $market = new CoinMarket();
 
-$market->addCurrency(new Bitcoin(10.988));
-$market->addCurrency(new Ethereum(10.988));
+$market->addCurrency(new Bitcoin(9095.988));
+$market->addCurrency(new Ethereum(732.988));
 $market->addCurrency(new Dogecoin(10.988));
 
 $marketPresenter = new MarketHtmlPresenter();

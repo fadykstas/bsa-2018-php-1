@@ -25,7 +25,7 @@ class CoinAbstract implements Currency
      */
     public function getName(): string
     {
-        // TODO: Implement getName() method.
+        return $this->name;
     }
 
     /**
@@ -33,7 +33,7 @@ class CoinAbstract implements Currency
      */
     public function getDailyPrice(): float
     {
-        // TODO: Implement getDailyPrice() method.
+        return $this->dailyPrice;
     }
 
     /**
@@ -41,14 +41,15 @@ class CoinAbstract implements Currency
      */
     public function getLogoUrl(): string
     {
-        // TODO: Implement getLogoUrl() method.
+        return $this->logoUrl;
     }
 
     /**
      * CoinAbstract constructor.
      */
-    public function __construct()
+    public function __construct($dailyPrice)
     {
+        $this->dailyPrice = $dailyPrice;
     }
 
 

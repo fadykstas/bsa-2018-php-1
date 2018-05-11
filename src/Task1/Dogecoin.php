@@ -14,4 +14,6 @@ class Dogecoin extends CoinAbstract
     protected $name = 'Dogecoin';
 
     protected $logoUrl = 'https://s2.coinmarketcap.com/static/img/coins/32x32/74.png';
+
+    protected $shortName = 'DOGE';
 }

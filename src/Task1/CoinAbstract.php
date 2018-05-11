@@ -20,6 +20,9 @@ class CoinAbstract implements Currency
     /** @var float $name */
     protected $dailyPrice;
 
+    /** @var string $shortName */
+    protected $shortName;
+
     /**
      * @return string
      */
@@ -42,6 +45,14 @@ class CoinAbstract implements Currency
     public function getLogoUrl(): string
     {
         return $this->logoUrl;
+    }
+
+    /**
+     * @return string
+     */
+    public function getShortName(): string
+    {
+        return $this->shortName;
     }
 
     /**

@@ -15,4 +15,5 @@ class Bitcoin extends CoinAbstract {
 
     protected $logoUrl = 'https://s2.coinmarketcap.com/static/img/coins/32x32/1.png';
 
+    protected $shortName = 'BTC';
 }

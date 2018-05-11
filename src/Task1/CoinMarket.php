@@ -4,18 +4,27 @@ namespace Cryptocurrency\Task1;
 
 class CoinMarket
 {
+    /** @var array CoinAbstract[] */
+    protected $currencies = [];
+
     public function addCurrency(Currency $currency): void
     {
-        // @todo
+        $this->currencies[] = $currency;
     }
 
     public function maxPrice(): float
     {
-        // @todo
+        return max(array_map(
+            function($row){
+                /** @var CoinAbstract $row */
+                return $row->getDailyPrice();
+            },
+            $this->currencies
+        ));
     }
 
     public function getCurrencies(): array
     {
-        // @todo
+        return $this->currencies;
     }
 }
